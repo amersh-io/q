@@ -7,6 +7,8 @@ q (quota) is a unit for the cost of a Claude Code turn: **1 q is one week of a C
 q: 82.1µq · 12.2k/q (~seed K)
 ```
 
+Why a week, and how it is measured: [1q = one week: a unit for Claude Code's usage limit](https://amersh.io/blog/en/q-unit/).
+
 ## The unit
 
 | unit | of 1 q | note |
@@ -115,6 +117,16 @@ For the last turn's cost in the status line too (plugins cannot set the status l
 - `K` drifts between weekly resets; calibrate again now and then.
 - Claude Code only — the claude.ai web/app usage is not seen.
 - It does not read your Claude login token or call any API.
+
+## Related projects
+
+- [claude-meter](https://github.com/abhishekray07/claude-meter) — a local proxy between Claude Code and Anthropic; logs 5h/7d utilization from response headers and estimates API dollars per 1% of the limit.
+- [Did Claude usage limits change?](https://drewhoover.com/blog/did-claude-usage-limits-change/) — weighted tokens per 1% of the limit, measured week by week. Closest to how `K` is calibrated here.
+- [ccusage](https://github.com/ccusage/ccusage) — token counts and API-equivalent cost from Claude Code's local logs, by day and session.
+- [Claude-Code-Usage-Monitor](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor) — real-time token usage with predictions of when you will hit the limit.
+- [claude-rate-monitor](https://www.npmjs.com/package/claude-rate-monitor) — shows the utilization in the rate-limit headers the Claude CLI receives.
+
+q differs in the unit: one week of the limit is 1, read with cq/mq/µq and its inverse (N/q).
 
 ## Develop
 
