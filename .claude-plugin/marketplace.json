@@ -1,0 +1,14 @@
+{
+  "name": "q",
+  "description": "The q plugin — turn cost in units of a week's Claude usage limit",
+  "owner": {
+    "name": "amersh"
+  },
+  "plugins": [
+    {
+      "name": "q",
+      "source": "./",
+      "description": "Measures turn cost in q, where 1 q is one week of a Claude subscription's usage limit — shown as N/q"
+    }
+  ]
+}

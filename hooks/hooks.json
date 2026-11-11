@@ -1,0 +1,18 @@
+{
+  "modules": [
+    "./q.ts"
+  ],
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/q.py\" stop",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

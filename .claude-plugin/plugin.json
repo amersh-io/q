@@ -1,0 +1,8 @@
+{
+  "name": "q",
+  "version": "0.3.0",
+  "description": "Measures turn cost in q, where 1 q is one week of a Claude subscription's usage limit — shown as N/q",
+  "author": {
+    "name": "amersh"
+  }
+}

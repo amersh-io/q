@@ -1,0 +1,8 @@
+{"type": "user", "message": {"role": "user", "content": "first prompt"}, "timestamp": "2026-11-08T00:00:00Z"}
+{"type": "assistant", "message": {"id": "m0", "usage": {"input_tokens": 10, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 10}, "stop_reason": "end_turn"}, "timestamp": "2026-11-08T00:00:01Z"}
+{"type": "user", "message": {"role": "user", "content": "second prompt"}, "timestamp": "2026-11-08T00:01:00Z"}
+{"type": "assistant", "message": {"id": "m1", "content": [{"type": "thinking"}], "usage": {"input_tokens": 2, "cache_creation_input_tokens": 1000, "cache_read_input_tokens": 100000, "output_tokens": 200}, "stop_reason": "tool_use"}, "timestamp": "2026-11-08T00:01:01Z"}
+{"type": "assistant", "message": {"id": "m1", "content": [{"type": "tool_use"}], "usage": {"input_tokens": 2, "cache_creation_input_tokens": 1000, "cache_read_input_tokens": 100000, "output_tokens": 200}, "stop_reason": "tool_use"}, "timestamp": "2026-11-08T00:01:01Z"}
+{"type": "user", "message": {"role": "user", "content": [{"type": "tool_result", "content": "ok"}]}, "timestamp": "2026-11-08T00:01:02Z"}
+{"type": "user", "isMeta": true, "message": {"role": "user", "content": "meta"}, "timestamp": "2026-11-08T00:01:03Z"}
+{"type": "assistant", "message": {"id": "m2", "content": [{"type": "text"}], "usage": {"input_tokens": 3, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 101000, "output_tokens": 50}, "stop_reason": "end_turn"}, "timestamp": "2026-11-08T00:01:04Z"}
